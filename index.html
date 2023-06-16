@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./scss/main.css" />
+  <!-- BOOTSTRAP CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <!-- ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <!-- RIGHT MENU BAR -->
+    <div class="right-menu-bar">
+      <div class="item mt-4">
+        <a href="" style="text-decoration: none; color: black">
+          <i class="fa-solid fa-house"></i>
+          <h6 class="text">Home</h6>
+        </a>
+      </div>
+      <div class="item">
+        <a href="" style="text-decoration: none; color: black">
+          <i class="fa-solid fa-headphones"></i>
+          <h6 class="text">Services</h6>
+        </a>
+      </div>
+      <div class="item">
+        <a href="" style="text-decoration: none; color: black">
+          <i class="fa-solid fa-signal"></i>
+          <h6 class="text">Dashboard</h6>
+        </a>
+      </div>
+      <div class="item">
+        <a href="" style="text-decoration: none; color: black"></a>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ms-5 ps-4"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <form class="d-flex mt-3">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" />
+              <button class="btn" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button
+                type="submit"
+                class="position-relative border border-0 light bg-light mt-1 me-4"
+              >
+                <i class="fa-solid fa-bell"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-1"
+                >
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <button
+                type="submit"
+                class="position-relative border border-0 light bg-light mt-1 me-4"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-1"
+                >
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <a class="nav-link" href="#">Kim's Stocks</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Dashboards -->
+    <div class="dashboard ms-5 ps-4 mt-3">
+      <h3>Dashboard</h3>
+    </div>
+    <!-- Cards -->
+    <div class="cards-group row ms-5 ps-4 mt-2">
+      <div class="card col-lg-3 p-2 ms-lg-2 ms-2 me-2">
+        <div class="card-earings p-2">
+          <p>Earings (Daily)</p>
+          <h4>$ 4,568</h4>
+        </div>
+        <div class="card-emoji">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <i class="fa-solid fa-calendar-day"></i>
+        </div>
+      </div>
+      <div class="card col-lg-3 p-2 ms-lg-2 ms-2 me-2">
+        <div class="card-earings p-2">
+          <p>Earings (Monthly)</p>
+          <h4>$ 167,953</h4>
+        </div>
+        <div class="card-emoji">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+        </div>
+      </div>
+      <div class="card col-lg-3 p-2 ms-lg-2 ms-2 me-2">
+        <div class="card-earings p-2">
+          <p>Tasks</p>
+          <h4>16</h4>
+        </div>
+        <div class="card-emoji">
+          <i class="fa-solid fa-list-check"></i>
+        </div>
+      </div>
+      <div class="card col-lg-3 p-2 ms-lg-2 ms-2 me-3">
+        <div class="card-earings p-2">
+          <p>Messages</p>
+          <h4>1</h4>
+        </div>
+        <div class="card-emoji">
+          <i class="fa-solid fa-message"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Earinings Overview  & Task -->
+    <div class="earnings-overview row ms-5 mt-5">
+      <div class="col-lg-9">
+        <div class="earnings-title border card ms-4 me-sm-3 me-2">
+          <h6 class="ms-lg-3 pt-lg-2 ms-sm-3 pt-sm-2 ps-sm-3 ms-1 pt-2 ps-3">
+            Earings Overview
+          </h6>
+        </div>
+        <div
+          class="earnings-chart card ms-lg-4 ms-sm-4 me-sm-3 ms-sm-4 ms-4 me-2"
+        >
+          <canvas
+            id="myChart"
+            class="ms-lg-3 p-lg-4 pt-lg-1 ms-sm-3 p-sm-4 pt-sm-1"
+          ></canvas>
+        </div>
+      </div>
+      <!-- Task -->
+      <div class="task col-lg-3">
+        <div class="task-title border card me-lg-1 ms-lg-1 me-lg-5 me-mb-3">
+          <h6 class="ms-lg-3 pt-lg-2 ms-mb-3 pt-mb-2 ps-mb-3">Tasks</h6>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Transaction history
+              <a href="#">
+                <span class="badge bg-primary rounded-pill">14</span>
+              </a>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Your stocks and coins
+              <a href="#">
+                <span class="badge bg-primary rounded-pill">2</span>
+              </a>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Messages
+              <a href="#">
+                <span class="badge bg-primary rounded-pill">1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAR.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+    <!-- BOOTSTRAP CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

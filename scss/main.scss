@@ -1,0 +1,129 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(238, 234, 234) !important;
+  overflow-x: hidden;
+  height: 700px;
+}
+
+.d-flex button {
+  background-color: gray;
+  &:hover {
+    background-color: gray;
+  }
+}
+.d-flex input:hover {
+  width: 400px;
+}
+.nav-item {
+  display: flex;
+}
+.right-menu-bar {
+  width: 58px;
+  // height: 880px;
+  height: 930px;
+  position: absolute;
+  z-index: 1;
+  background-color: skyblue;
+  text-align: center;
+  transition: all 1s;
+
+  .item {
+    margin-top: 20px;
+  }
+  a {
+    display: flex;
+    i {
+      position: fixed;
+      margin-left: 20px;
+    }
+  }
+  .text {
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    transform: translate(-150px);
+    transition: all 1s;
+    font-weight: normal;
+  }
+  &:hover {
+    width: 160px;
+    text-align: left;
+  }
+  &:hover .text {
+    animation-name: right-menu-bar;
+    animation-duration: 1s;
+    text-align: center;
+    margin-bottom: 0;
+    transform: translate(50px);
+  }
+}
+@keyframes right-menu-bar {
+  0% {
+    transform: translate(-100px);
+  }
+  50% {
+    transform: translate(55px);
+  }
+  100% {
+    transform: translate(50px);
+  }
+}
+
+// cards
+.cards-group .card {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+  border-left-width: 4px;
+  border-left-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 7px;
+  width: 23%;
+
+  .card-emoji {
+    display: flex;
+    margin: auto;
+    margin-right: 15%;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+//Earnings overviw
+.earnings-overview {
+  .earnings-title {
+    background-color: rgb(248, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .earnings-chart {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
+// Task
+.task {
+  .task-title {
+    background-color: rgb(248, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .right-menu-bar {
+    height: 1400x;
+  }
+  .task {
+    opacity: 0;
+  }
+  // cards
+  .cards-group .card {
+    width: 94%;
+
+    .card-emoji {
+      display: flex;
+      margin: auto;
+      margin-right: 15%;
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+}
