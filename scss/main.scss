@@ -19,7 +19,6 @@ body {
 }
 .right-menu-bar {
   width: 58px;
-  // height: 880px;
   height: 930px;
   position: absolute;
   z-index: 1;
@@ -32,11 +31,16 @@ body {
   }
   a {
     display: flex;
+    margin-bottom: 35px;
     i {
       position: fixed;
       margin-left: 20px;
     }
+    h6 {
+      position: fixed;
+    }
   }
+
   .text {
     margin: 0;
     padding: 0;
